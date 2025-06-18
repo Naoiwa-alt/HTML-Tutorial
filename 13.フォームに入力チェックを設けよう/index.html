@@ -4,13 +4,18 @@
   <label for="username">ユーザー名:</label><br>
   
   <!-- 下のインプットフォームに入力値チェックを追加する -->
-  <input 
+  <input  
     type="text" 
     id="username" 
     name="username" 
     placeholder="ユーザー名を入力してください"
-    
+    minlength="4"
+    maxlength="10"
+    required
   >
 
   <input type="submit" value="送信">
 </form>
+
+# ユーザー名は 4文字 以上 10文字以下 となるようにバリデーションを設定してみましょう。
+# ユーザー名が入力されていない場合や、文字数の条件を満たしていない場合はフォームを送信できないようにしてください。
